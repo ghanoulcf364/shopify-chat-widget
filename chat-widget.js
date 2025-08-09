@@ -2,13 +2,12 @@
 (function() {
     // Wait for secure config to load
     function initializeWidget() {
-        if (!window.SecureChatConfig) {
+        if (!window.ShopifySecureChatConfig) {
             setTimeout(initializeWidget, 100);
             return;
         }
 
-        const secureConfig = window.SecureChatConfig;
-
+        const secureConfig = window.ShopifySecureChatConfig;
         // Language translations
         const translations = {
             'ar': {
