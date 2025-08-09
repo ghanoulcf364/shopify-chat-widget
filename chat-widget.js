@@ -699,11 +699,10 @@
 
         // Default configuration merged with secure config
         const defaultConfig = {
-            webhook: {
-                url: secureConfig.webhook.url,
-                route: secureConfig.webhook.route,
-                auth: secureConfig.webhook.auth
-            },
+    webhook: {
+        url: secureConfig.webhook.url,
+        route: secureConfig.webhook.route
+    },
             branding: {
                 logo: 'https://maroc4products.com/cdn/shop/files/UphZTEuF0AiBurH5lAtNAgQLFYjN3biYaF4SMEHJ-removebg-preview.png',
                 name: 'Maroc4Products',
@@ -721,10 +720,6 @@
                 backgroundColor: '#ffffff',
                 fontColor: '#333333'
             },
-            ghl: {
-                accessToken: secureConfig.ghl.accessToken,
-                locationId: secureConfig.ghl.locationId
-            }
         };
 
         // Merge user config with defaults
